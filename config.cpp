@@ -381,77 +381,101 @@ class cfgVehicles {
 
 	class ItemOptics;
 	class TTC_EotechVudu_Optic : ItemOptics {
-		isFullscreen = 1;
-		class OpticsInfo {
-			PPMaskProperties[] = {0.0, 0.0, 0.8, 0.01};
-			PPLensProperties[] = {0.1, 0.0, 0.0, 0.01};
-		};
+		s_isFullscreen = 1;
+		s_pipRadius = 1.0;
+		s_pipMagnification = 0.1;
+		s_pipBlur = 0.01;
+		s_pipChromAber = 0.01;
 	};
 	class TTC_EotechVudu_AK_Optic : ItemOptics {
-		isFullscreen = 1;
-		class OpticsInfo {
-			PPMaskProperties[] = {0.0, 0.0, 0.8, 0.01};
-			PPLensProperties[] = {0.1, 0.0, 0.0, 0.01};
-		};
+		s_isFullscreen = 1;
+		s_pipRadius = 1.0;
+		s_pipMagnification = 0.1;
+		s_pipBlur = 0.01;
+		s_pipChromAber = 0.01;
 	};
 	class TTC_VortexRHDAMG_Optic : ItemOptics {
-		isFullscreen = 1;
-		class OpticsInfo {
-			PPMaskProperties[] = {0.0, 0.0, 0.2, 0.02};
-			PPLensProperties[] = {0.2, 0.0, 0.0, 0.01};
-		};
+		s_isFullscreen = 1;
+		s_pipRadius = 0.2;
+		s_pipMagnification = 0.2;
+		s_pipBlur = 0.02;
+		s_pipChromAber = 0.01;
 	};
 	class TTC_VortexSE_Optic : ItemOptics {
-		isFullscreen = 1;
-		class OpticsInfo {
-			PPMaskProperties[] = {0.0, 0.0, 0.6, 0.02};
-			PPLensProperties[] = {0.2, 0.0, 0.0, 0.01};
-		};
+		s_isFullscreen = 1;
+		s_pipRadius = 0.6;
+		s_pipMagnification = 0.2;
+		s_pipBlur = 0.02;
+		s_pipChromAber = 0.01;
 	};
-	class TTCOptic2 : ItemOptics {
-		showEnterMisalignment = 1;
-		isFullscreen = 1;
-		class OpticsInfo {
-			PPMaskProperties[] = {0.0, 0.0, 0.8, 0.02};
-			PPLensProperties[] = {0.2, 0.0, 0.0, 0.01};
-		};
+	class TTC_G3_Optic : ItemOptics {
+		s_showEnterMisalignment = 1;
+		s_isFullscreen = 1;
+		s_pipRadius = 1.0;
+		s_pipMagnification = 0.2;
+		s_pipBlur = 0.02;
+		s_pipChromAber = 0.01;
 	};
 	class TTC_G28_Optic : ItemOptics {
-		showEnterMisalignment = 1;
-		isFullscreen = 1;
-		class OpticsInfo {
-			PPMaskProperties[] = {0.0, 0.0, 0.8, 0.02};
-			PPLensProperties[] = {0.2, 0.0, 0.0, 0.01};
-		};
+		s_showEnterMisalignment = 1;
+		s_isFullscreen = 1;
+		s_pipRadius = 1.0;
+		s_pipMagnification = 0.2;
+		s_pipBlur = 0.02;
+		s_pipChromAber = 0.01;
 	};
 	class TTC_HAMR : ItemOptics {
+		s_pipRadius = 0.5;
+		s_pipMagnification = 0.2;
+		s_pipBlur = 0.02;
+		s_pipChromAber = 0.01;
 		class OpticsInfo {
-			PPMaskProperties[] = {0.0, 0.0, 0.5, 0.02};
-			PPLensProperties[] = {0.2, 0.0, 0.0, 0.01};
+			opticsZoomMin = "0.3926/6";
+			opticsZoomMax = "0.3926/6";
+			opticsZoomInit = "0.3926/6";
+			discretefov[] = {};
 		};
 	};
 	class TTC_HAMR_AK : ItemOptics {
+		s_pipRadius = 0.5;
+		s_pipMagnification = 0.2;
+		s_pipBlur = 0.02;
+		s_pipChromAber = 0.01;
 		class OpticsInfo {
-			PPMaskProperties[] = {0.0, 0.0, 0.5, 0.02};
-			PPLensProperties[] = {0.2, 0.0, 0.0, 0.01};
+			opticsZoomMin = "0.3926/6";
+			opticsZoomMax = "0.3926/6";
+			opticsZoomInit = "0.3926/6";
+			discretefov[] = {};
 		};
 	};
 	class TTC_Elcan : ItemOptics {
+		s_pipRadius = 0.5;
+		s_pipMagnification = 0.2;
+		s_pipBlur = 0.02;
+		s_pipChromAber = 0.01;
 		class OpticsInfo {
-			PPMaskProperties[] = {0.0, 0.0, 0.5, 0.02};
-			PPLensProperties[] = {0.2, 0.0, 0.0, 0.01};
+			opticsZoomMin = "0.3926/6";
+			opticsZoomMax = "0.3926/6";
+			opticsZoomInit = "0.3926/6";
+			discretefov[] = {};
 		};
 	};
 	class TTC_Elcan_AK : ItemOptics {
+		s_pipRadius = 0.5;
+		s_pipMagnification = 0.2;
+		s_pipBlur = 0.02;
+		s_pipChromAber = 0.01;
 		class OpticsInfo {
-			PPMaskProperties[] = {0.0, 0.0, 0.5, 0.02};
-			PPLensProperties[] = {0.2, 0.0, 0.0, 0.01};
+			opticsZoomMin = "0.3926/6";
+			opticsZoomMax = "0.3926/6";
+			opticsZoomInit = "0.3926/6";
+			discretefov[] = {};
 		};
 	};
 	class TTC_SVT40_Optic : ItemOptics {
-		class OpticsInfo {
-			PPMaskProperties[] = {0.0, 0.0, 0.45, 0.007};
-			PPLensProperties[] = {0.5, 0.0, 0.0, 0.2};
-		};
+		s_pipRadius = 0.45;
+		s_pipMagnification = 0.5;
+		s_pipBlur = 0.007;
+		s_pipChromAber = 0.2;
 	};
 };
