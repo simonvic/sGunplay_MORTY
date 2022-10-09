@@ -167,7 +167,7 @@ class cfgWeapons {
 		s_recoilControlMisalignmentY = 0.50;
 		s_recoilControlKick = 0.75;
 	};
-	class TTC_M16 : Rifle_Base {
+	class TTC_M16A_Base : Rifle_Base {
 		s_recoilControlStabilityX = 0.60;
 		s_recoilControlStabilityY = 0.60;
 		s_recoilControlMisalignmentX = 0.50;
